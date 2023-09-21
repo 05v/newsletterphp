@@ -7,4 +7,6 @@
     <?php include('../source/views/form.php'); ?>
 </body>
 
+<?php include('../source/views/script.php'); ?>
+
 </html>

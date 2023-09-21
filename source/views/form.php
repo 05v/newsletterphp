@@ -1,14 +1,20 @@
 <section class="newsletter">
     <div class="newsletter__wrapper">
-        <form class="newsletter__form">
+        <form class="newsletter__form" method="post" action="subscribe.php">
             <label class="newsletter__label" for="email">Email:</label>
-            <input class="newsletter__input" type="email" id="email" name="email" required>
+            <input class="newsletter__input" type="email" id="email" name="email" placeholder="dirk@email.nl" required>
 
-            <label class="newsletter__label" for="newsletter-type">Selecteer nieuwsbrief type:</label>
-            <select class="newsletter__select" id="newsletter-type" name="newsletter-type" required>
-                <option class="newsletter__option" value="type1">Nieuwsbrief Type 1</option>
-                <option class="newsletter__option" value="type2">Nieuwsbrief Type 2</option>
-            </select>
+            <fieldset class="newsletter__fieldset">
+                <legend class="newsletter__legend">Selecteer nieuwsbrief types:</legend>
+                <label class="newsletter__checkbox">
+                    <input type="checkbox" name="newsletter-type" value="type1">
+                    Nieuwsbrief Type 1
+                </label>
+                <label class="newsletter__checkbox">
+                    <input type="checkbox" name="newsletter-type" value="type2">
+                    Nieuwsbrief Type 2
+                </label>
+            </fieldset>
 
             <button class="newsletter__submit" type="submit">Verzenden</button>
         </form>
